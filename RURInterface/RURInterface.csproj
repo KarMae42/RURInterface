@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HomePage.aspx" />
-    <Content Include="mollyTesting.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
