@@ -67,11 +67,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="DataAnalysis.aspx" />
+    <Content Include="GameProfile.aspx" />
+    <Content Include="Games.aspx" />
     <Content Include="HomePage.aspx" />
+    <Content Include="League.aspx" />
+    <Content Include="RefereeProfile.aspx" />
+    <Content Include="RefProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAnalysis.aspx.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAnalysis.aspx.designer.cs">
+      <DependentUpon>DataAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameProfile.aspx.cs">
+      <DependentUpon>GameProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameProfile.aspx.designer.cs">
+      <DependentUpon>GameProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Games.aspx.cs">
+      <DependentUpon>Games.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Games.aspx.designer.cs">
+      <DependentUpon>Games.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="League.aspx.cs">
+      <DependentUpon>League.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="League.aspx.designer.cs">
+      <DependentUpon>League.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefereeProfile.aspx.cs">
+      <DependentUpon>RefereeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RefereeProfile.aspx.designer.cs">
+      <DependentUpon>RefereeProfile.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
