@@ -5,17 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>RateUrRef</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/site.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="headPlaceHolder" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+<div class="container">
+    <form id="form1" runat="server" class="form-horizontal">
         <header>RateUrRef</header>
-        <main>
+        <aside class="col-sm-2"><nav>
+                <asp:HyperLink runat="server" NavigateUrl="~/HomePage.aspx">
+                Home</asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/League.aspx">
+                League</asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/About.aspx">
+                About</asp:HyperLink>
+            </nav></aside>
+
+        <main class="col-sm-9">
             <h1>TEST OF NEW WEBSITE</h1>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </main>
+        <footer>
+            <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </footer>
     </form>
+</div>
 </body>
 </html>

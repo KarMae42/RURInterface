@@ -13,13 +13,13 @@ namespace RURInterface {
     public partial class Site {
         
         /// <summary>
-        /// head control.
+        /// headPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder headPlaceHolder;
         
         /// <summary>
         /// form1 control.
@@ -38,5 +38,14 @@ namespace RURInterface {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+        /// <summary>
+        /// footerPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder footerPlaceHolder;
     }
 }

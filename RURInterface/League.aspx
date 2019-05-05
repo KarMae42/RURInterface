@@ -1,15 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="League.aspx.cs" Inherits="RURInterface.League" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="League.aspx.cs" Inherits="RURInterface.League" %>
+<%@ MasterType VirtualPath="~/Site.Master" %>
 
-<!DOCTYPE html>
+<asp:Content ID="mainContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class ="row"> <%-- row 1 --%>
+        <label class="col-sm-5">League Profile Page</label>
+        <asp:TextBox runat="server"> </asp:TextBox>
+    </div> <%-- end of row 1 --%>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
