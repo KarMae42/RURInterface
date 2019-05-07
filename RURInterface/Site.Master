@@ -31,7 +31,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="League.aspx">League</a></li>
                 <li><a href="About.aspx">About Us</a></li>
-                <li><a href="GameProfile.aspx">Game Profile</a></li>
+                <li><a href="Games.aspx">Schedule</a></li>
+                <li><a href="RefereeProfile.aspx">Referee Profile</a></li>
+                <li><a href="DataAnalysis.aspx">Data Analysis</a></li>
             </ul>
         </div>
     </nav>

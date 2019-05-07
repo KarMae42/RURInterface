@@ -4,7 +4,7 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Referee Profile Page</label>
-        <asp:TextBox runat="server"> </asp:TextBox>
+        <asp:TextBox runat="server" Text="Page of list of referee profiles"> </asp:TextBox>
     </div> <%-- end of row 1 --%>
 </asp:Content>
 

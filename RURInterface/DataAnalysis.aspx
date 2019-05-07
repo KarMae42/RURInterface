@@ -4,7 +4,7 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Data Analysis Page</label>
-        <asp:TextBox runat="server"> </asp:TextBox>
+        <asp:TextBox runat="server" ID="txtTempPgDescription" Text="This is where the graphs and such for the Word Stat will go"> </asp:TextBox>
     </div> <%-- end of row 1 --%>
 </asp:Content>
 

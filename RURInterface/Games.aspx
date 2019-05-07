@@ -4,6 +4,6 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Games Schedule Page</label>
-        <asp:TextBox runat="server"> </asp:TextBox>
+        <asp:TextBox runat="server" ID="txtTempPgDescription" Text="This page is for the schedule of tournament"> </asp:TextBox>
     </div> <%-- end of row 1 --%>
 </asp:Content>
