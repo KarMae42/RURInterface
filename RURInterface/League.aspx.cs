@@ -11,7 +11,7 @@ namespace RURInterface
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Master.HeaderText = "League Page";
         }
     }
 }
