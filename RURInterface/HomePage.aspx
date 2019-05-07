@@ -12,4 +12,6 @@
     </div> <%-- end of row 1 --%>
 </asp:Content>
 
+<asp:Content ID="footerContent" ContentPlaceHolderID="footerPlaceHolder" runat="server">
 
+</asp:Content>

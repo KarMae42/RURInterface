@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="RURInterface.About" %>
+﻿<%@ Page Title="About Us Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="RURInterface.About" %>
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
@@ -8,4 +8,6 @@
     </div> <%-- end of row 1 --%>
 </asp:Content>
 
+<asp:Content ID="footerContent" ContentPlaceHolderID="footerPlaceHolder" runat="server">
 
+</asp:Content>
