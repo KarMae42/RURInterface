@@ -135,6 +135,7 @@
     <Compile Include="League.aspx.designer.cs">
       <DependentUpon>League.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\TeamID.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefereeProfile.aspx.cs">
       <DependentUpon>RefereeProfile.aspx</DependentUpon>
