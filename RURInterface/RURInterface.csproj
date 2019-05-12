@@ -79,6 +79,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GameProfile.aspx" />
     <Content Include="Games.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
     <Content Include="League.aspx" />
     <Content Include="RefereeProfile.aspx" />
@@ -127,6 +128,9 @@
     </Compile>
     <Compile Include="Games.aspx.designer.cs">
       <DependentUpon>Games.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="League.aspx.cs">
       <DependentUpon>League.aspx</DependentUpon>
