@@ -1,17 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="RURInterface.HomePage" %>
-<%@ MasterType VirtualPath="~/Site.Master" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="headPlaceHolder" runat="server">
-
 </asp:Content>
-
-<asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
-    <div class ="row"> <%-- row 1 --%>
-        <label class="col-sm-5">Home Page</label>
-        <asp:TextBox runat="server"> </asp:TextBox>
-    </div> <%-- end of row 1 --%>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainPlaceholder" runat="server">
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="footerPlaceHolder" runat="server">
 
-<asp:Content ID="footerContent" ContentPlaceHolderID="footerPlaceHolder" runat="server">
-
+    <%--Can Embed Moments to have a timeline of tweets effect???--%>
+    <a class="twitter-moment" data-lang="en" href="https://twitter.com/i/moments/1127782165872353280?ref_src=twsrc%5Etfw">TestingNewMoment</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </asp:Content>
