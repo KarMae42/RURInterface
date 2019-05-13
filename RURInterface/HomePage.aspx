@@ -8,7 +8,7 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Home Page</label>
-        <asp:TextBox runat="server"> </asp:TextBox>
+        <asp:TextBox runat="server" Height="165px" Width="395px">PUT THE INFO AND ARTICLES HERE</asp:TextBox>
     </div> <%-- end of row 1 --%>
 </asp:Content>
 
