@@ -31,7 +31,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/League">League</a></li>
                 <li><a href="/About">About Us</a></li>
-                <li><a href="/Games">Schedule</a></li>
+                <li><a href="/Games.aspx">Schedule</a></li>
                 <li><a href="/RefereeProfile">Referee Profile</a></li>
                 <li><a href="/DataAnalysis">Data Analysis</a></li>
             </ul>
