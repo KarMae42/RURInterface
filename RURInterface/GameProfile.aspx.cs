@@ -18,9 +18,9 @@ namespace RURInterface
                 ddlGameID.DataBind();
 
                 string id = "";
-                if (RouteData.Values.ContainsKey("gameID"))
+                if (RouteData.Values.ContainsKey("id"))
                 {
-                    id = RouteData.Values["gameID"].ToString();
+                    id = RouteData.Values["id"].ToString();
                 }
                 else
                 {
@@ -59,11 +59,11 @@ namespace RURInterface
 
         private GameID GetSelectedGame(string id)
         {
-            //DataView gameSelected = (DataView)
-            //    SqlDataSource1.Select(DataSourceSelectArguments.Empty);
             DataView gameSelected = (DataView)
-                SqlDataSourceTrialFromLocal.Select(DataSourceSelectArguments.Empty);
-            gameSelected.RowFilter = $"gameID = '{id}'";
+                SqlDataSource1.Select(DataSourceSelectArguments.Empty);
+            //DataView gameSelected = (DataView)
+            //    SqlDataSourceTrialFromLocal.Select(DataSourceSelectArguments.Empty);
+            gameSelected.RowFilter = $"id = '{id}'";
             DataRowView row = gameSelected[0];
 
             GameID g = new GameID();

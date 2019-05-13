@@ -22,7 +22,7 @@
     </div>
 
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
-        SelectCommand="SELECT [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 
+        SelectCommand="SELECT [id], [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 
         FROM [bracket] WHERE ([game_round] = @game_round) ORDER BY [date_time]">
         <SelectParameters>
             <asp:ControlParameter ControlID="ddlSelectRound" Name="game_round" PropertyName="SelectedValue" Type="String" />
@@ -34,7 +34,7 @@
         <ItemTemplate>
             <div class="col-sm-4">
             <div class=" gamePod_content gamePod_content-pod_container container">
-                <div class="gamePod_content"><a href="/GameProfile/">
+                <div class="gamePod_content"><a href="/GameProfile/<%# Eval("id") %>">
                     <%--Home Team VS Away Team--%>
                     <div class="gamePod-description">
                         <span><%# Eval("game_round") %></span>

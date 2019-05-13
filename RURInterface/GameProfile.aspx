@@ -30,8 +30,8 @@
     <div class="col-sm-8">
         <label class="col-sm-6">Select Game: </label>
         <div class="col-sm-5">
-            <asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="True" DataSourceID="SqlDataSourceTrialFromLocal" 
-                    DataTextField="gameID" DataValueField="gameID" 
+            <asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" 
+                    DataTextField="id" DataValueField="id" 
                     OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSourceTrialFromLocal" runat="server" ConnectionString="<%$ ConnectionStrings:WebAppFinalConnectionString %>" 
                 SelectCommand="SELECT [gameID], [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 

@@ -25,15 +25,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="League.aspx">NCAA March Madness League</a>
+            <a class="navbar-brand" href="/HomePage.aspx">NCAA March Madness League</a>
         </div>
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="League">League</a></li>
-                <li><a href="About">About Us</a></li>
-                <li><a href="Games">Schedule</a></li>
-                <li><a href="RefereeProfile">Referee Profile</a></li>
-                <li><a href="DataAnalysis">Data Analysis</a></li>
+                <li class="active"><a href="/League">League</a></li>
+                <li><a href="/About">About Us</a></li>
+                <li><a href="/Games">Schedule</a></li>
+                <li><a href="/RefereeProfile">Referee Profile</a></li>
+                <li><a href="/DataAnalysis">Data Analysis</a></li>
             </ul>
         </div>
     </nav>
