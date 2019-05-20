@@ -29,7 +29,7 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-    <div class="row">
+    <div class="row">e
     <asp:Repeater ID="teamDisplayRepeater" runat="server" DataSourceID="SqlDataSource3" OnItemCommand="teamDisplayRepeater_ItemCommand">
         <ItemTemplate>
             <div class="col-sm-4">
@@ -41,13 +41,13 @@
                     </div>
                     <ul class="gamePod-game-teams">
                         <li>
-                            <span class="gamePod-game-team-name"><a href='/Team/<%# Eval("home_team") %>'>
-                                <%# Eval("home_team") %></a></span>
+                            <span class="gamePod-game-team-name">
+                                <%# Eval("home_team") %></span>
                             <span class="gamePod-game-team-score"><%# Eval("home_score") %></span>
                         </li>
                         <li>
-                            <span class="gamePod-game-team-name"><a href='/Team/<%# Eval("away_team") %>'>
-                                <%# Eval("away_team") %></a></span>
+                            <span class="gamePod-game-team-name">
+                                <%# Eval("away_team") %></span>
                             <span class="gamePod-game-team-score"><%# Eval("away_score") %></span>
                         </li>
                     </ul>

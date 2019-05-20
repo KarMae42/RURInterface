@@ -24,30 +24,32 @@
  <%--   HTML for Tweet Button--%>
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Game Profile Page</label>
-        <asp:TextBox runat="server" Text="Each specific game when clicked on is directed here"> </asp:TextBox>
+        <p>Each specific game when clicked on is directed here</p>
     </div> <%-- end of row 1 --%>
 
     <div class="col-sm-8">
         <label class="col-sm-6">Select Game: </label>
         <div class="col-sm-5">
-            <asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" 
-                    DataTextField="id" DataValueField="id" 
-                    OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSourceTrialFromLocal" runat="server" ConnectionString="<%$ ConnectionStrings:WebAppFinalConnectionString %>" 
-                SelectCommand="SELECT [gameID], [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 
-                FROM [bracket]"></asp:SqlDataSource>
+            <asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1"
+                DataTextField="id" DataValueField="id"
+                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
                 SelectCommand="SELECT [id], [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 
                 FROM [bracket]">
             </asp:SqlDataSource>
 
             <%-- Display the game info --%>
-            
+            <div class="container">
                 <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label></h1>
                 <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
-                <p><asp:Label ID="lblRef1" runat="server" ></asp:Label></p>
-                <p><asp:Label ID="lblRef2" runat="server" ></asp:Label></p>
-                <p><asp:Label ID="lblRef3" runat="server" ></asp:Label></p>
+
+                <p><a href="/RefereeProfile/<%# Eval(lblRef1.ToString()) %>" ><asp:Label ID="lblRef1" runat="server" ></asp:Label></a></></p>
+                <p><a href="/RefereeProfile/<%# Eval("Ron Groover") %>"><asp:Label ID="lblRef2" runat="server" ></asp:Label></a></p>
+                <p><a href="/RefereeProfile/<%# Eval("ref3") %>"><asp:Label ID="lblRef3" runat="server" ></asp:Label></a></p>
+              </div>
+            <ul>
+                  
+              </ul>
         </div>
     </div>
     <a href="https://twitter.com/intent/tweet"

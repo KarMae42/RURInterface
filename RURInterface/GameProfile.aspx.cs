@@ -27,6 +27,8 @@ namespace RURInterface
                     var segments = Request.GetFriendlyUrlSegments();
                     if (segments.Count > 0) id = segments[0];
                 }
+                //var segments = Request.GetFriendlyUrlSegments();
+                //if (segments.Count > 0) id = segments[0];
 
                 if (id == "") Reload();
                 else ShowSelectedGame(id);
