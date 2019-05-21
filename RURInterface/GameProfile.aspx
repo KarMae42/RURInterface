@@ -42,9 +42,15 @@
                 <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label></h1>
                 <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
-                <p><a href="/RefereeProfile/<%# Eval(lblRef1.ToString()) %>" ><asp:Label ID="lblRef1" runat="server" ></asp:Label></a></></p>
-                <p><a href="/RefereeProfile/<%# Eval("Ron Groover") %>"><asp:Label ID="lblRef2" runat="server" ></asp:Label></a></p>
-                <p><a href="/RefereeProfile/<%# Eval("ref3") %>"><asp:Label ID="lblRef3" runat="server" ></asp:Label></a></p>
+                <p>
+                    <asp:Button ID="btnRef1Info" runat="server" Text="Score" OnClick="ref1Info_Click" />
+                </p>
+                <p>
+                    <asp:Button ID="btnRef2Info" runat="server" Text="Score" OnClick="ref2Info_Click" />
+                </p>
+                <p>
+                    <asp:Button ID="btnRef3Info" runat="server" Text="Score" OnClick="ref3Info_Click" />
+                </p>
                 <p><asp:Label ID="lblSentimentScore" runat="server"></asp:Label></p>
               </div>
             <ul>

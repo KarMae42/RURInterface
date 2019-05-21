@@ -1,0 +1,63 @@
+﻿/* Bootstrap override! */
+
+body {
+}
+
+
+.gamePod_content
+.gamePod_content-pod_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.gamePod {
+    /*position: relative;
+    display: block;
+    padding: 14px 19px;
+    margin: 0 6.5px 13px 6.5px;*/
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    /*box-sizing: border-box;
+    overflow: hidden;*/
+}
+
+.gamePod .gamePod-description {
+    min-height: 1rem;
+    font: 0.75rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+    color: #7D7F81;
+    /*color: black;*/ /*attempt to change some color*/
+    text-transform: uppercase;
+}
+
+.gamePod .gamePod-game-teams {
+    display: block;
+    clear: both;
+    list-style-type: none;
+    margin: 13px 0 2px 0;
+    padding: 0;
+ }
+
+.gamePod .gamePod-game-teams li .gamePod-game-team-rank {
+    width: 20px;
+    flex-shrink: 0;
+    padding: 4px 0 0 0;
+    font: 0.75rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+    text-align: right;
+}
+
+.gamePod .gamePod-game-teams li .gamePod-game-team-name {
+    align-self: stretch;
+    margin: 2px auto auto 0;
+    font: 0.875rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+}
+
+.gamePod .gamePod-game-teams li .gamePod-game-team-score {
+    display: none;
+    align-self: flex-end;
+    margin: 0 0 auto 10px;
+    font: 0.875rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+}

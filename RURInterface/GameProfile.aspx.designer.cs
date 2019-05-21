@@ -49,31 +49,31 @@ namespace RURInterface {
         protected global::System.Web.UI.WebControls.Label lblAwayTeam;
         
         /// <summary>
-        /// lblRef1 control.
+        /// btnRef1Info control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRef1;
+        protected global::System.Web.UI.WebControls.Button btnRef1Info;
         
         /// <summary>
-        /// lblRef2 control.
+        /// btnRef2Info control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRef2;
+        protected global::System.Web.UI.WebControls.Button btnRef2Info;
         
         /// <summary>
-        /// lblRef3 control.
+        /// btnRef3Info control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRef3;
+        protected global::System.Web.UI.WebControls.Button btnRef3Info;
         
         /// <summary>
         /// lblSentimentScore control.

@@ -20,7 +20,9 @@ namespace RURInterface
                 string id = "";
                 if (RouteData.Values.ContainsKey("Referee"))
                 {
-                    id = RouteData.Values["Referee"].ToString();
+                    //id = RouteData.Values["Referee"].ToString();
+                    //id = Convert.ToString(Request.QueryString("Referee"));
+                    id = Request.QueryString["Referee"];
                 }
                 else
                 {

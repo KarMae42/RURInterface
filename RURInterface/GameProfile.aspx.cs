@@ -52,10 +52,15 @@ namespace RURInterface
             var game = GetSelectedGame(id);
             lblHomeTeam.Text = game.HomeTeam;
             lblAwayTeam.Text = game.AwayTeam;
-            lblRef1.Text = game.Ref1;
-            lblRef2.Text = game.Ref2;
-            lblRef3.Text = game.Ref3;
+            //lblRef1.Text = game.Ref1;
+            //lblRef2.Text = game.Ref2;
+            //lblRef3.Text = game.Ref3;
+            btnRef1Info.Text = game.Ref1;
+            btnRef2Info.Text = game.Ref2;
+            btnRef3Info.Text = game.Ref3;
             lblSentimentScore.Text = game.SentimentScore;
+
+            
 
             ddlGameID.SelectedValue = game.ID;
         }
@@ -78,6 +83,26 @@ namespace RURInterface
             g.SentimentScore = row["star_rating"].ToString();
 
             return g;
+        }
+
+        public void MakeStringQuery(string ref1, string ref2, string ref3)
+        {
+
+        }
+
+        protected void ref1Info_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/RefereeProfile/" + btnRef1Info.Text);
+        }
+
+        protected void ref2Info_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/RefereeProfile/" + btnRef2Info.Text);
+        }
+
+        protected void ref3Info_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/RefereeProfile/" + btnRef3Info.Text);
         }
     }
 }

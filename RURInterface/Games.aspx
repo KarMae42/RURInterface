@@ -29,7 +29,7 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-    <div class="row">e
+    <div class="row">
     <asp:Repeater ID="teamDisplayRepeater" runat="server" DataSourceID="SqlDataSource3" OnItemCommand="teamDisplayRepeater_ItemCommand">
         <ItemTemplate>
             <div class="col-sm-4">

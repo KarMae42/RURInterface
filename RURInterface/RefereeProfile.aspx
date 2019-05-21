@@ -34,17 +34,7 @@
         </ItemTemplate>
     </asp:Repeater>
 
-    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource2" OnItemCommand="refereeDisplayRepeater_ItemCommand">
-        <ItemTemplate>
-            <div>
-                <ul>
-                    <span>Home Team: <%# Eval("home_team") %></span>
-                    <span>Away Team: <%# Eval("away_team") %></span>
-                    <span>Score: <%# Eval("star_rating") %></span>
-                </ul>
-            </div>
-        </ItemTemplate>
-    </asp:Repeater>
+    
 
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
         SelectCommand="SELECT referee_star_ratings.game_id, referee_star_ratings.referee_name, referee_star_ratings.star_rating, bracket.home_team, bracket.away_team, referee_average_star_rating.Average_star_rating 
