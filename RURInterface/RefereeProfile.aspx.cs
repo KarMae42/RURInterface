@@ -64,6 +64,7 @@ namespace RURInterface
         {
             DataView refereeSelected = (DataView)
                SqlDataSource3.Select(DataSourceSelectArguments.Empty);
+            //refereeSelected.RowFilter = $"Referee = '{id}'";
             refereeSelected.RowFilter = $"Referee = '{id}'";
             //refereeSelected.RowFilter = string.Format("Referee = '{0}'", ddlrefSelect.SelectedValue);
             DataRowView row = refereeSelected[0];

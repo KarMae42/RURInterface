@@ -34,8 +34,7 @@
                 DataTextField="id" DataValueField="id"
                 OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
-                SelectCommand="SELECT [id], [home_team], [home_score], [home_mascot], [home_abbr], [away_team], [away_score], [away_mascot], [away_abbr], [date_time], [game_round], [ref1], [ref2], [ref3] 
-                FROM [bracket]">
+                SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id">
             </asp:SqlDataSource>
 
             <%-- Display the game info --%>
@@ -46,6 +45,7 @@
                 <p><a href="/RefereeProfile/<%# Eval(lblRef1.ToString()) %>" ><asp:Label ID="lblRef1" runat="server" ></asp:Label></a></></p>
                 <p><a href="/RefereeProfile/<%# Eval("Ron Groover") %>"><asp:Label ID="lblRef2" runat="server" ></asp:Label></a></p>
                 <p><a href="/RefereeProfile/<%# Eval("ref3") %>"><asp:Label ID="lblRef3" runat="server" ></asp:Label></a></p>
+                <p><asp:Label ID="lblSentimentScore" runat="server"></asp:Label></p>
               </div>
             <ul>
                   

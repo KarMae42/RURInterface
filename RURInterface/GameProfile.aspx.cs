@@ -55,6 +55,7 @@ namespace RURInterface
             lblRef1.Text = game.Ref1;
             lblRef2.Text = game.Ref2;
             lblRef3.Text = game.Ref3;
+            lblSentimentScore.Text = game.SentimentScore;
 
             ddlGameID.SelectedValue = game.ID;
         }
@@ -74,6 +75,7 @@ namespace RURInterface
             g.Ref1 = row["ref1"].ToString();
             g.Ref2 = row["ref2"].ToString();
             g.Ref3 = row["ref3"].ToString();
+            g.SentimentScore = row["star_rating"].ToString();
 
             return g;
         }

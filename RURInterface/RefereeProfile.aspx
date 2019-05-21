@@ -11,6 +11,8 @@
     <asp:DropDownList ID="ddlrefSelect" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" 
         DataTextField="Referee" DataValueField="Referee" 
         OnSelectedIndexChanged="ddlrefSelect_SelectedIndexChanged"></asp:DropDownList>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
+        SelectCommand="SELECT [game_id] FROM [referee_star_ratings]"></asp:SqlDataSource>
     
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
         SelectCommand="SELECT [Referee], [Average_star_rating] FROM [referee_average_star_rating]"></asp:SqlDataSource>
@@ -31,11 +33,25 @@
             </div>
         </ItemTemplate>
     </asp:Repeater>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" SelectCommand="SELECT referee_star_ratings.game_id, referee_star_ratings.referee_name, referee_star_ratings.star_rating, bracket.home_team, bracket.away_team, referee_average_star_rating.Average_star_rating 
+
+    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource2" OnItemCommand="refereeDisplayRepeater_ItemCommand">
+        <ItemTemplate>
+            <div>
+                <ul>
+                    <span>Home Team: <%# Eval("home_team") %></span>
+                    <span>Away Team: <%# Eval("away_team") %></span>
+                    <span>Score: <%# Eval("star_rating") %></span>
+                </ul>
+            </div>
+        </ItemTemplate>
+    </asp:Repeater>
+
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
+        SelectCommand="SELECT referee_star_ratings.game_id, referee_star_ratings.referee_name, referee_star_ratings.star_rating, bracket.home_team, bracket.away_team, referee_average_star_rating.Average_star_rating 
         FROM referee_star_ratings 
         INNER JOIN bracket ON bracket.id = referee_star_ratings.game_id 
         INNER JOIN referee_average_star_rating ON referee_average_star_rating.Referee = referee_star_ratings.referee_name 
-        ORDER BY referee_star_ratings.game_id"></asp:SqlDataSource>
+        ORDER BY referee_star_ratings.referee_name"></asp:SqlDataSource>
     
 
 </asp:Content>

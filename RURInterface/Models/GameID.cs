@@ -21,4 +21,6 @@ public class GameID
     public string Ref1 { get; set; }
     public string Ref2 { get; set; }
     public string Ref3 { get; set; }
+
+    public string SentimentScore { get; set; }
 }
