@@ -10,11 +10,13 @@ public class GameID
     public string HomeScore { get; set; }
     public string HomeMascot { get; set; }
     public string HomeAbbr { get; set; }
+    public string HomeLogo { get; set; }
 
     public string AwayTeam { get; set; }
     public string AwayScore { get; set; }
     public string AwayMascot { get; set; }
     public string AwayAbbr { get; set; }
+    public string AwayLogo { get; set; }
 
     public string DateTime { get; set; }
     public string GameRound { get; set; }

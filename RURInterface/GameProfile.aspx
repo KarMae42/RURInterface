@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameProfile.aspx.cs" Inherits="RURInterface.GameProfile" %>
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
+
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <%--javascript for tweet button--%>
     <script>window.twttr = (function(d, s, id) {
@@ -34,12 +35,15 @@
                 DataTextField="id" DataValueField="id"
                 OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
-                SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id">
+                SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating 
+                FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id">
             </asp:SqlDataSource>
 
             <%-- Display the game info --%>
             <div class="container">
-                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label></h1>
+                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label>
+                    <img src="@logopathHome" id="imageHomeTeam"/>
+                </h1>
                 <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
                 <p>

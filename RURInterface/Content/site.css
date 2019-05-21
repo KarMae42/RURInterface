@@ -1,8 +1,15 @@
 ﻿/* Bootstrap override! */
 
-body {
+jumbotron {
+    background: url("'../Images/gold star.png'");
+    background-size: 100% 100%;
+    
 }
 
+logo {
+    height: 28px;
+    width: 28px;
+}
 
 .gamePod_content
 .gamePod_content-pod_container {
@@ -60,4 +67,8 @@ body {
     align-self: flex-end;
     margin: 0 0 auto 10px;
     font: 0.875rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+}
+
+
+body {
 }
