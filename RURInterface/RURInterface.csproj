@@ -82,6 +82,7 @@
     <Content Include="Games.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
+    <Content Include="Images\bar_chart_wordstat.jpg" />
     <Content Include="Images\gold star.png" />
     <Content Include="League.aspx" />
     <Content Include="RefereeProfile.aspx" />

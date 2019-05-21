@@ -7,10 +7,18 @@
         </div> <%-- end of row 1 --%>
     <div class="container">
         <p>
-            This page will have information and graphs regarding the different games and statistics that were found with the data
-            that was collected. WordStat was used in order to come up with different statistics and graphs that illustrate our
-            findings overall on some of the data other than the offical score of the refs.
+            The analysis for RateUrRef was done through extracting almost half a million tweets from Twitter. 
+            From there, the data was cleaned and we found about 50,000 usable tweets. With these tweets, we were able to run 
+            sentiment analysis on them as well as find out frequencies of the most used words. To find these frequencies, a 
+            combination of WordStat8 and Tableau were used. This page shows some of the results that were found using these 
+            programs. For example, the team that appeared in most tweets during the March Madness tournament was Duke. Another
+            example shows that the most tweeted about game was the Championship game. In the future, RateUrRef will dive more 
+            into the statistics and provide an more focused view of the data analysis.
         </p>
     </div>
+    <div class="container">
+        <img src="Images/bar_chart_wordstat.jpg" alt="Bar Chart" style="width:600px;height:600px;" />
+    </div>
+
 </asp:Content>
 
