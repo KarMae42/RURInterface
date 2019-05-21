@@ -4,7 +4,13 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
         <label class="col-sm-5">Data Analysis Page</label>
-        <asp:TextBox runat="server" ID="txtTempPgDescription" Text="This is where the graphs and such for the Word Stat will go"> </asp:TextBox>
-    </div> <%-- end of row 1 --%>
+        </div> <%-- end of row 1 --%>
+    <div class="container">
+        <p>
+            This page will have information and graphs regarding the different games and statistics that were found with the data
+            that was collected. WordStat was used in order to come up with different statistics and graphs that illustrate our
+            findings overall on some of the data other than the offical score of the refs.
+        </p>
+    </div>
 </asp:Content>
 
