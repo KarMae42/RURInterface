@@ -39,10 +39,18 @@
                 FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id">
             </asp:SqlDataSource>
 
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" 
+                DataTextField="id" DataValueField="id"
+                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
+
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating, team.logo, team_1.logo AS Expr1 FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id INNER JOIN team ON team.team = bracket.home_team INNER JOIN team AS team_1 ON bracket.away_team = team.logo"></asp:SqlDataSource>
+
             <%-- Display the game info --%>
             <div class="container">
                 <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label>
-                    <img src="@logopathHome" id="imageHomeTeam"/>
+                    
+                    <asp:Image ID ="imgHomeTeam" runat="server"/>
+
                 </h1>
                 <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
@@ -55,7 +63,7 @@
                 <p>
                     <asp:Button ID="btnRef3Info" runat="server" Text="Score" OnClick="ref3Info_Click" />
                 </p>
-                <p><asp:Label ID="lblSentimentScore" runat="server"></asp:Label></p>
+                <p><h1><asp:Label ID="lblSentimentScore" runat="server"></asp:Label></h1></p>
               </div>
             <ul>
                   

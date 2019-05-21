@@ -52,6 +52,7 @@ namespace RURInterface
             var game = GetSelectedGame(id);
             lblHomeTeam.Text = game.HomeTeam;
             //hometeam img src set
+            //imgHomeTeam.ImageUrl = game.HomeLogo;
             lblAwayTeam.Text = game.AwayTeam;
             //awayteam img src
             //lblRef1.Text = game.Ref1;
@@ -78,7 +79,7 @@ namespace RURInterface
 
             GameID g = new GameID();
             g.HomeTeam = row["home_team"].ToString();
-            //g.HomeLogo = row["logo"].ToString();
+            //g.HomeLogo = row["logo"].ToString(); //from datasource1, home logo is still logo
             g.AwayTeam = row["away_team"].ToString();
             //g.AwayLogo = row["Expr1"].ToString(); //from data source 1, away logo saved as expr1
             g.Ref1 = row["ref1"].ToString();
