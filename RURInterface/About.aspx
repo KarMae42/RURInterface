@@ -5,7 +5,7 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
     <div class ="row"> <%-- row 1 --%>
        
-        <label class="col-sm-5">About Page</label>
+        <label class="col-sm-5"><h2>About</h2></label>
         
    </div> <%-- end of row 1 --%>
     <div class="container">

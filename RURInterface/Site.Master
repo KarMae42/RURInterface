@@ -11,13 +11,45 @@
     <script src="/Scripts/jquery-1.9.1.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="headPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .title {
+            font-family: Georgia;
+            font-size: 20in;
+            font-weight: 3;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: capitalize;
+            line-height: normal;
+            text-align: center;
+            padding: -5px 0;
+        }
+        .auto-style2 {
+            font-size: 70pt;
+            color: #1E3B87;
+        }
+        .auto-style3 {
+            color: inherit;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            background-color: #747579;
+            height: 131px;
+        }
+        .auto-style4 {
+            width: 168px;
+            height: 169px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
     
 <div class="container">
     <form id="form1" runat="server" class="form-horizontal">
-        <header class="jumbotron"><%--picture placeholder --%></header>
-    <nav class="navbar navbar-default">
+        <header class="auto-style3"><%--picture placeholder --%>
+            <img alt="RateUrRef Logo" class="auto-style4" src="Images/gold%20star.png" /> <span class="auto-style2"><strong>RateUrRef</strong></span></header>
+    <nav id= "cssmenu" class="navbar navbar-default">
         <div class="container-fluid">
             <button type="button" class="navbar-toggle collapsed"
                 data-toggle="collapse" data-target="#mainMenu">
@@ -60,7 +92,7 @@
 
         <footer class="text-center text-info">
             <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
-                <asp:Label ID="lblTestFooter" runat="server" Text="RateUrRef brouth to you by CS gals"></asp:Label>
+                RateUrRef brought to you by CSGals
             </asp:ContentPlaceHolder>
         </footer>
     </form>
