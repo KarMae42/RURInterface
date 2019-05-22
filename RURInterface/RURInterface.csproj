@@ -82,8 +82,13 @@
     <Content Include="Games.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
+    <Content Include="Images\10_most_frequent_words.jpg" />
+    <Content Include="Images\bad-refs.jpg" />
     <Content Include="Images\bar_chart_wordstat.jpg" />
     <Content Include="Images\gold star.png" />
+    <Content Include="Images\missed-ncaa-refs-blew.jpg" />
+    <Content Include="Images\refs-frequency.jpg" />
+    <Content Include="Images\team-frequency.jpg" />
     <Content Include="League.aspx" />
     <Content Include="RefereeProfile.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

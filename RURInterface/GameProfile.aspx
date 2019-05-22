@@ -37,12 +37,7 @@
             <%-- Display the game info --%>
             <div class="container">
    
-                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label>
-                    
-                    <asp:Image ID ="imgHomeTeam" runat="server"/>
-
-                </h1>
-                <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
+                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label> vs <asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
                <%--   HTML for Tweet Button--%>
     <div class ="row"> <%-- row 1 --%>
