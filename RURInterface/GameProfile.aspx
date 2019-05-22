@@ -22,17 +22,20 @@
         }(document, "script", "twitter-wjs"));
   </script>
 
+    <div class ="container"> <%-- row 1 --%>
+        <h1 class="blue">Game Profile</h1>
+    </div> <%-- end of row 1 --%>
+
  <%--   HTML for Tweet Button--%>
     <div class ="row"> <%-- row 1 --%>
-        <label class="col-sm-5">Game Profile Page</label>
+        <div class="col-sm-5">
+            <%--<asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1"
+                DataTextField="id" DataValueField="id"
+                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>--%>
     </div> <%-- end of row 1 --%>
 
     <div class="col-sm-8">
-        <label class="col-sm-6">Select Game: </label>
-        <div class="col-sm-5">
-            <asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1"
-                DataTextField="id" DataValueField="id"
-                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>
+        
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
                 SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating 
                 FROM bracket INNER JOIN referee_star_ratings ON referee_star_ratings.game_id = bracket.id">

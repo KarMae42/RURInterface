@@ -3,11 +3,10 @@
 
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
-    <div class ="row"> <%-- row 1 --%>
-       
-        <label class="col-sm-5">About Page</label>
-        
-   </div> <%-- end of row 1 --%>
+    <div class ="container"> <%-- row 1 --%>
+        <h1 class="blue">About Rate Ur Ref</h1>
+    </div> <%-- end of row 1 --%>
+
     <div class="container">
         <p> RateUrRef was made as the Capstone project for the Software Engineering course at Elmhurst College. RateUrRef collected Tweets regarding referee performance 
             in the 2019 NCAA basketball tournament. Those tweets were then analyzed for negative or positive sentiment (i.e. if the user was satisfied or unhappy with

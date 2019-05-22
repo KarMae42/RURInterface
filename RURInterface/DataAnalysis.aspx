@@ -2,9 +2,10 @@
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
-    <div class ="row"> <%-- row 1 --%>
-        <label class="col-sm-5">Data Analysis Page</label>
-        </div> <%-- end of row 1 --%>
+    <div class ="container"> <%-- row 1 --%>
+        <h1 class="blue">Data Analysis</h1>
+    </div> <%-- end of row 1 --%>
+
     <div class="container">
         <p>
             The analysis for RateUrRef was done through extracting almost half a million tweets from Twitter. 

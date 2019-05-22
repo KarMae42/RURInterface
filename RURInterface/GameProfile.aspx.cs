@@ -15,7 +15,7 @@ namespace RURInterface
         {
             if (!IsPostBack)
             {
-                ddlGameID.DataBind();
+                //ddlGameID.DataBind();
 
                 string id = "";
                 if (RouteData.Values.ContainsKey("id"))
@@ -35,15 +35,16 @@ namespace RURInterface
             }
         }
 
-        protected void ddlGameID_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Reload();
-        }
+        //protected void ddlGameID_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    Reload();
+        //}
 
         private void Reload()
         {
-            var id = ddlGameID.SelectedValue;
-            var url = FriendlyUrl.Href("~/GameProfile", id);
+            //var id = ddlGameID.SelectedValue;
+            //var url = FriendlyUrl.Href("~/GameProfile", id);
+            var url = FriendlyUrl.Href("~/GameProfile");
             Response.Redirect(url);
         }
 
@@ -65,7 +66,7 @@ namespace RURInterface
 
             
 
-            ddlGameID.SelectedValue = game.ID;
+            //ddlGameID.SelectedValue = game.ID;
         }
 
         private GameID GetSelectedGame(string id)

@@ -16,7 +16,7 @@
     
 <div class="container">
     <form id="form1" runat="server" class="form-horizontal">
-        <header class="jumbotron"><%--picture placeholder --%></header>
+        <%--<header class="jumbotron"><%--picture placeholder --%>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <button type="button" class="navbar-toggle collapsed"
@@ -52,7 +52,7 @@
         </div>--%>
 
         <main class="col-sm-9">
-            <h1>NCAA MARCH MADNESS</h1>
+            <%--<h1>NCAA MARCH MADNESS</h1>--%>
             <h1><asp:Label ID="lblPageHeader" runat="server"></asp:Label></h1>
             <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
             </asp:ContentPlaceHolder>
@@ -60,7 +60,7 @@
 
         <footer class="text-center text-info">
             <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
-                <asp:Label ID="lblTestFooter" runat="server" Text="RateUrRef brouth to you by CS gals"></asp:Label>
+                <asp:Label ID="lblTestFooter" runat="server"></asp:Label>
             </asp:ContentPlaceHolder>
         </footer>
     </form>
