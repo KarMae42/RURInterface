@@ -40,15 +40,6 @@ namespace RURInterface {
         protected global::System.Web.UI.WebControls.Label lblHomeTeam;
         
         /// <summary>
-        /// imgHomeTeam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgHomeTeam;
-        
-        /// <summary>
         /// lblAwayTeam control.
         /// </summary>
         /// <remarks>

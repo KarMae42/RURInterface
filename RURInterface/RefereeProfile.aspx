@@ -29,7 +29,7 @@
             <div><a href="<%# Eval("Referee") %>">
                 <ul>
                     <span><%# Eval("Referee") %></a></span>
-                    <span><%# Eval("Average_star_rating") %></span>
+                    <span><%# Eval("Average_star_rating", "{0:F2}") %></span>
                 </ul>
             </div>
         </ItemTemplate>
