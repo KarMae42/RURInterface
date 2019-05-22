@@ -58,6 +58,7 @@ namespace RURInterface
             var referee = GetSelectedReferee(id);
             lblRefName.Text = referee.RefereeName;
             lblAverageRate.Text = referee.AverageTotal;
+            //lblAverageRate.Text = referee.AverageTotal.ToString("F2");
 
             ddlrefSelect.SelectedValue = referee.RefereeName;
             
@@ -75,6 +76,7 @@ namespace RURInterface
             RefereeInfo r = new RefereeInfo();
             r.RefereeName = row["Referee"].ToString();
             r.AverageTotal = row["Average_star_rating"].ToString();
+            //r.AverageTotal = (float)row["Average_star_rating"];
 
             return r;
         }

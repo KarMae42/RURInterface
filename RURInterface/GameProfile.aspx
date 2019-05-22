@@ -46,12 +46,7 @@
 
             <%-- Display the game info --%>
             <div class="container">
-                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label>
-                    
-                    <asp:Image ID ="imgHomeTeam" runat="server"/>
-
-                </h1>
-                <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
+                <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label> vs <asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
                 <p>
                     <asp:Button ID="btnRef1Info" runat="server" Text="Score" OnClick="ref1Info_Click" />

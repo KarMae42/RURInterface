@@ -40,13 +40,11 @@
                     <ul class="gamePod-game-teams">
                         <li>
                             <span class="gamePod-game-team-name">
-                                <%# Eval("home_team") %></span>
-                            <span class="gamePod-game-team-score"><%# Eval("home_score") %></span>
+                                <%# Eval("home_team") %> <%# Eval("home_score") %></span>
                         </li>
                         <li>
                             <span class="gamePod-game-team-name">
-                                <%# Eval("away_team") %></span>
-                            <span class="gamePod-game-team-score"><%# Eval("away_score") %></span>
+                                <%# Eval("away_team") %> <%# Eval("away_score") %></span>
                         </li>
                     </ul>
                </div>
