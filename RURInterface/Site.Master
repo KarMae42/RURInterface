@@ -26,11 +26,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/HomePage.aspx">NCAA MARCH MADNESS</a>
+            <a class="navbar-brand" href="/HomePage.aspx">RATE UR REF</a>
         </div>
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/League">League</a></li>
+                <%--<li class="active"><a href="/League">League</a></li>--%>
                 <li><a href="/About">About Us</a></li>
                 <li><a href="/Games.aspx">Schedule</a></li>
                 <li><a href="/RefereeProfile">Referee Profile</a></li>
@@ -52,7 +52,7 @@
         </div>--%>
 
         <main class="col-sm-9">
-            <h1>TEST OF NEW WEBSITE</h1>
+            <h1>NCAA MARCH MADNESS</h1>
             <h1><asp:Label ID="lblPageHeader" runat="server"></asp:Label></h1>
             <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
             </asp:ContentPlaceHolder>
@@ -60,7 +60,7 @@
 
         <footer class="text-center text-info">
             <asp:ContentPlaceHolder ID="footerPlaceHolder" runat="server">
-                <asp:Label ID="lblTestFooter" runat="server" Text="Test of Footer"></asp:Label>
+                <asp:Label ID="lblTestFooter" runat="server" Text="RateUrRef brouth to you by CS gals"></asp:Label>
             </asp:ContentPlaceHolder>
         </footer>
     </form>
