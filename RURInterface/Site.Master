@@ -30,43 +30,33 @@
         .auto-style3 {
             color: inherit;
             text-align: center;
-            margin-bottom: 30px;
-            padding-top: 48px;
-            padding-bottom: 48px;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             background-color: #747579;
-            height: 131px;
+            height: 150px;
         }
         .auto-style4 {
-            width: 168px;
-            height: 169px;
+            width: 150px;
+            height: 140px;
             float: left;
         }
     </style>
 </head>
 <body>
-    
-<div class="container">
-    <form id="form1" runat="server" class="form-horizontal">
-        <header class="auto-style3"><%--picture placeholder --%>
-            <img alt="RateUrRef Logo" class="auto-style4" src="Images/gold%20star.png" /> <span class="auto-style2"><strong>RateUrRef</strong></span></header>
+       <header class="auto-style3"><%--picture placeholder --%>
+            <a href="/HomePage"><img alt="RateUrRef Logo" class="auto-style4" src="Images/gold%20star.png" /></a>
+            <span class="auto-style2"><strong>RateUrRef</strong></span>
+        </header>
+   <div class="container">
     <nav id= "cssmenu" class="navbar navbar-default">
-        <div class="container-fluid">
-            <button type="button" class="navbar-toggle collapsed"
-                data-toggle="collapse" data-target="#mainMenu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/HomePage.aspx">RATE UR REF</a>
-        </div>
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav">
-                <%--<li class="active"><a href="/League">League</a></li>--%>
-                <li><a href="/About">About Us</a></li>
+                <li><a href="/HomePage">Home</a></li>
                 <li><a href="/Games.aspx">Schedule</a></li>
                 <li><a href="/RefereeProfile">Referee Profile</a></li>
                 <li><a href="/DataAnalysis">Data Analysis</a></li>
+                <li><a href="/About">About Us</a></li>
             </ul>
         </div>
     </nav>
@@ -95,7 +85,6 @@
                 RateUrRef brought to you by CSGals
             </asp:ContentPlaceHolder>
         </footer>
-    </form>
 </div>
 </body>
 </html>
