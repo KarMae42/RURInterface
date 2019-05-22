@@ -2,9 +2,8 @@
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
-    <div class ="row"> <%-- row 1 --%>
-        <label class="col-sm-5">Games Schedule Page</label>
-        <asp:TextBox runat="server" ID="txtTempPgDescription" Text="This page is for the schedule of tournament" Width="783px"></asp:TextBox>
+    <div class ="container"> <%-- row 1 --%>
+        <h1 class="blue">NCAA March Madness Game Schedule</h1>
     </div> <%-- end of row 1 --%>
 
     <%--From CSFinal that put together--%>
@@ -29,12 +28,12 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-    <div class="row">
+    <div class="container">
     <asp:Repeater ID="teamDisplayRepeater" runat="server" DataSourceID="SqlDataSource3" OnItemCommand="teamDisplayRepeater_ItemCommand">
         <ItemTemplate>
-            <div class="col-sm-4">
-            <div class=" gamePod_content gamePod_content-pod_container container">
-                <div class="gamePod_content"><a href="/GameProfile/<%# Eval("id") %>">
+            <div class="col-sm-4"><a href="/GameProfile/<%# Eval("id") %>">
+            <div class="gamePod container gamePod_content gamePod_content-pod_container">
+                <div class="gamePod_content">
                     <%--Home Team VS Away Team--%>
                     <div class="gamePod-description">
                         <span><%# Eval("game_round") %></span>
@@ -51,9 +50,9 @@
                             <span class="gamePod-game-team-score"><%# Eval("away_score") %></span>
                         </li>
                     </ul>
-               </a></div>
+               </div>
             </div>
-            </div>
+            </a></div>
         </ItemTemplate>
     </asp:Repeater>
     </div>

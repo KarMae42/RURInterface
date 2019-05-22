@@ -13,15 +13,6 @@ namespace RURInterface {
     public partial class Games {
         
         /// <summary>
-        /// txtTempPgDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTempPgDescription;
-        
-        /// <summary>
         /// ddlSelectRound control.
         /// </summary>
         /// <remarks>
