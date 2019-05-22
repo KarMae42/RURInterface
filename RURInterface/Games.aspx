@@ -11,13 +11,12 @@
         <div class="form-group">
             <label id="lblSelectRound" for="ddlSelectRound">
                 Choose a Round:
-            </label>
+            </label></div>
             <div class="col-sm-3">
                 <asp:DropDownList ID="ddlSelectRound" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="game_round" DataValueField="game_round"></asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
                     SelectCommand="SELECT [game_round] FROM [gameRound]"></asp:SqlDataSource>
-            </div>
-        </div>
+            </div> 
     </div>
 
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 

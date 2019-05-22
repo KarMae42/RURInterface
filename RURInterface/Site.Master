@@ -84,7 +84,7 @@
         </div>--%>
 
         <main class="col-sm-9">
-            <h1>NCAA MARCH MADNESS</h1>
+            <%--<h1>NCAA MARCH MADNESS</h1>--%>
             <h1><asp:Label ID="lblPageHeader" runat="server"></asp:Label></h1>
             <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
             </asp:ContentPlaceHolder>

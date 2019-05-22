@@ -2,9 +2,8 @@
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainPlaceHolder" runat="server">
-    <div class ="row"> <%-- row 1 --%>
-        <label class="col-sm-5">Referee Profile Page</label>
-        <p>This page will list out referee names, games, scores for each game, and overall average</p>
+    <div class ="container"> <%-- row 1 --%>
+        <h1 class="blue">Referee Profile</h1>
     </div> <%-- end of row 1 --%>
     
     
