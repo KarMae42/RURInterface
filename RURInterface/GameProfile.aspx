@@ -24,17 +24,7 @@
 
     <div class ="container"> <%-- row 1 --%>
         <h1 class="blue">Game Profile</h1>
-    </div> <%-- end of row 1 --%>
-
- <%--   HTML for Tweet Button--%>
-    <div class ="row"> <%-- row 1 --%>
-        <div class="col-sm-5">
-            <%--<asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1"
-                DataTextField="id" DataValueField="id"
-                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>--%>
-    </div> <%-- end of row 1 --%>
-
-    <div class="col-sm-8">
+    </div> <%-- end of row 1 --%> 
         
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
                 SelectCommand="SELECT bracket.id, bracket.home_team, bracket.home_score, bracket.home_mascot, bracket.home_abbr, bracket.away_team, bracket.away_score, bracket.away_mascot, bracket.away_abbr, bracket.date_time, bracket.game_round, bracket.ref1, bracket.ref2, bracket.ref3, referee_star_ratings.star_rating 
@@ -46,6 +36,7 @@
 
             <%-- Display the game info --%>
             <div class="container">
+   
                 <h1 class="display-2"><asp:Label ID="lblHomeTeam" runat="server" ></asp:Label>
                     
                     <asp:Image ID ="imgHomeTeam" runat="server"/>
@@ -53,23 +44,16 @@
                 </h1>
                 <h1 class="display-2"><asp:Label ID="lblAwayTeam" runat="server" ></asp:Label></h1>
 
-                <p>
-                    <asp:Button ID="btnRef1Info" runat="server" Text="Score" OnClick="ref1Info_Click" />
-                </p>
-                <p>
-                    <asp:Button ID="btnRef2Info" runat="server" Text="Score" OnClick="ref2Info_Click" />
-                </p>
-                <p>
-                    <asp:Button ID="btnRef3Info" runat="server" Text="Score" OnClick="ref3Info_Click" />
-                </p>
-                <p><h1><asp:Label ID="lblSentimentScore" runat="server"></asp:Label></h1></p>
-              </div>
-            <ul>
-                  
-              </ul>
-        </div>
-    </div>
-    <a href="https://twitter.com/intent/tweet"
+               <%--   HTML for Tweet Button--%>
+    <div class ="row"> <%-- row 1 --%>
+        <div class="col-sm-5">
+            <%--<asp:DropDownList ID="ddlGameID" runat="server" AutoPostBack="true" DataSourceID="SqlDataSource1"
+                DataTextField="id" DataValueField="id"
+                OnSelectedIndexChange="ddlGameID_SelectedIndexChanged" CssClass="form-control"></asp:DropDownList>--%>
+    </div> <%-- end of row 1 --%>
+
+    <div class="col-sm-8">
+        <a href="https://twitter.com/intent/tweet"
         data-size="large"
         data-text =" "
         data-url=" "
@@ -77,6 +61,25 @@
         data-via="RateUrRef"
         data-related="RateUrRef"
         class="twitter-share-button">Tweet</a>
+                
+                <h2>Referees:</h2>
+
+                <div>
+                    <asp:Button class="refButton" ID="btnRef1Info" runat="server" Text="Score" OnClick="ref1Info_Click" />
+
+                    <asp:Button class="refButton" ID="btnRef2Info" runat="server" Text="Score" OnClick="ref2Info_Click" />
+
+                    <asp:Button class="refButton" ID="btnRef3Info" runat="server" Text="Score" OnClick="ref3Info_Click" />
+                </div>
+
+                <br>
+                <br>
+                <h2 class="blue">Game Performance Score: <asp:Label ID="lblSentimentScore" runat="server"></asp:Label> </h2>
+              </div>
+
+        </div>
+    </div>
+ 
 
 </asp:Content>
 

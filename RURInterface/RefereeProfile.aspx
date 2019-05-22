@@ -6,6 +6,7 @@
         <h1 class="blue">Referee Profile</h1>
     </div> <%-- end of row 1 --%>
     
+    <div class="container">
     
     <asp:DropDownList ID="ddlrefSelect" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" 
         DataTextField="Referee" DataValueField="Referee" 
@@ -15,11 +16,12 @@
     
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
         SelectCommand="SELECT [Referee], [Average_star_rating] FROM [referee_average_star_rating]"></asp:SqlDataSource>
-    
+    </div>
     <div class="container"> <%--Display ref from connecting game clicked??? --%>
         <h1><asp:Label ID="lblRefName" runat="server" ></asp:Label></h1>
         <%--<p><asp:Label ID="lblsentimentScore" runat="server" ></asp:Label></p>--%>
-        <h1><asp:Label ID="lblAverageRate" runat="server" ></asp:Label></h1>
+        <h2> Referee Performance Score: <asp:Label ID="lblAverageRate" runat="server" ></asp:Label></h2>
+
     </div>
    
     <asp:Repeater ID="refereeDisplayRepeater" runat="server" DataSourceID="SqlDataSource3" OnItemCommand="refereeDisplayRepeater_ItemCommand">
