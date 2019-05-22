@@ -44,10 +44,13 @@
     </style>
 </head>
 <body>
+
        <header class="auto-style3"><%--picture placeholder --%>
             <a href="/HomePage"><img alt="RateUrRef Logo" class="auto-style4" src="Images/gold%20star.png" /></a>
             <span class="auto-style2"><strong>RateUrRef</strong></span>
         </header>
+
+    <form id="form1" runat="server" class="form-horizontal">
    <div class="container">
     <nav id= "cssmenu" class="navbar navbar-default">
         <div class="collapse navbar-collapse" id="mainMenu">
@@ -86,5 +89,6 @@
             </asp:ContentPlaceHolder>
         </footer>
 </div>
+    </form>
 </body>
 </html>
