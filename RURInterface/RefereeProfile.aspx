@@ -7,11 +7,11 @@
     </div> <%-- end of row 1 --%>
     
     <div class="container">
-    
-    <asp:DropDownList ID="ddlrefSelect" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" 
+    <asp:DropDownList class="dropdown-design-guy blue" ID="ddlrefSelect" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" 
         DataTextField="Referee" DataValueField="Referee" 
         OnSelectedIndexChanged="ddlrefSelect_SelectedIndexChanged"></asp:DropDownList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
         SelectCommand="SELECT [game_id] FROM [referee_star_ratings]"></asp:SqlDataSource>
     
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RateUrRefDbConnectionString %>" 
@@ -26,12 +26,14 @@
    
     <asp:Repeater ID="refereeDisplayRepeater" runat="server" DataSourceID="SqlDataSource3" OnItemCommand="refereeDisplayRepeater_ItemCommand">
         <ItemTemplate>
-            <div><a href="<%# Eval("Referee") %>">
-                <ul>
-                    <span><%# Eval("Referee") %></a></span>
-                    <span><%# Eval("Average_star_rating", "{0:F2}") %></span>
-                </ul>
-            </div>
+            <div class="gamePod container gamePod_content gamePod_content-pod_container">
+                    <div><a href="<%# Eval("Referee") %>">
+                        <ul class="gamePod-game-teams">
+                            <span class="blue"><%# Eval("Referee") %></a></span>
+                            <span><%# Eval("Average_star_rating", "{0:F2}") %></span>
+                        </ul>
+                 </div>
+              </div>
         </ItemTemplate>
     </asp:Repeater>
 

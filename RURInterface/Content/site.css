@@ -211,13 +211,25 @@ jumbotron {
     font: 0.875rem "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
 }
 
+.dropdown-design-guy {
+    font-family: "Geogrotesque","Rockwell",Georgia,Times,"Times New Roman",serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #FAFCFD;
+    border: 2px solid transparent;
+    transition: .3s ease-in-out;
+    width: 50%;
+    height: 75%;
+    padding-bottom: 15px;
+    border-color: #1e3b87;
+}
+
+
 /*trying a new css style*/
 @import url(http://fonts.googleapis.com/css?family=Capriola);
-
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a {
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
     margin: 0;
     padding: 0;
     border: 0;
