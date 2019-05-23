@@ -18,16 +18,16 @@
         </p>
     </div>
     <div class="container">
-        <img src="Images/team-frequency.jpg" alt="Bar Chart" style="width:600px;height:600px;" />
+        <img src="Images/team-frequency.jpg" alt="Bar Chart" style="width:800px;height:600px;" />
     </div>
     <div class="container">
-        <img src="Images/10_most_frequent_words.jpg" alt="Bar Chart" style="width:600px;height:600px;" />
+        <img src="Images/10_most_frequent_words.jpg" alt="Bar Chart" style="width:800px;height:600px;" />
     </div>
     <div class="container">
-        <img src="Images/missed-ncaa-refs-blew.jpg" alt="Bar Chart" style="width:600px;height:600px;" />
+        <img src="Images/missed-ncaa-refs-blew.jpg" alt="Bar Chart" style="width:800px;height:600px;" />
     </div>
     <div class="container">
-        <img src="Images/refs-frequency.jpg" alt="Bar Chart" style="width:600px;height:600px;" />
+        <img src="Images/refs-frequency.jpg" alt="Bar Chart" style="width:00px;height:600px;" />
     </div>
 
 </asp:Content>
